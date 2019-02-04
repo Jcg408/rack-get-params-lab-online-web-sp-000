@@ -37,7 +37,7 @@ class Application
           resp.write "#{item}\n"
           end #do
       else
-        resp.write "Empty Cart"
+        resp.write "Your cart is empty"
       end #if
    end #if
  end #method
