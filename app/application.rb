@@ -33,6 +33,6 @@ class Application
   def cart
     
     if @@cart.empty?
-      resp.write
+      resp.write "Cart empty"
   end
 end
