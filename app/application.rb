@@ -31,8 +31,9 @@ class Application
   end
   
   def cart
-   if req.path.match(/cart/)
+     if req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}\n"
+      end
    end
 end
