@@ -24,7 +24,7 @@ class Application
       resp.write handle_search(search_term)
     else
       resp.write "Path Not Found"
-    end
+    end # first if
     resp.finish
   end #method
 
