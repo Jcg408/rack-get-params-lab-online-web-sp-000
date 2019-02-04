@@ -32,9 +32,12 @@ class Application
   
   def cart
      if req.path.match(/cart/)
+       if @@cart.!empty?
         @@cart.each do |item|
           resp.write "#{item}\n"
         end
+      else
+        resp.write "Empty Cart"
       end
    end
 end
