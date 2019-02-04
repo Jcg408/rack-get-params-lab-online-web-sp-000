@@ -35,7 +35,7 @@ class Application
        if @@cart.!empty?
         @@cart.each do |item|
           resp.write "#{item}\n"
-        end
+          end
       else
         resp.write "Empty Cart"
       end
