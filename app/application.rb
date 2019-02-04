@@ -31,8 +31,8 @@ class Application
   end
   
   def cart
-    
-    if @@cart.empty?
-      resp.write "Cart empty"
-  end
+   if req.path.match(/cart/)
+      @@cart.each do |item|
+        resp.write "#{item}\n"
+   end
 end
